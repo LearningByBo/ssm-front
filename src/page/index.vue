@@ -15,7 +15,7 @@ export default {
     return {
       msg1: 'test',
       msg2: 'test2',
-      getValue: '',
+      getValue: ''
     }
   },
   methods:{
@@ -23,8 +23,8 @@ export default {
   		this.$router.push('/user')
   	},
   	getValueFun () {
-      getUserInfo({'userId':1}).then(res => {
-        this.getValue = res.data 
+      getUserInfo({id:'1'}).then(res => {
+        this.getValue = res.result
       })
   	}
   }
